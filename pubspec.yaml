@@ -1,0 +1,31 @@
+name: esp32_led_control
+description: Control ESP32 LED via BLE and WiFi from Flutter
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^1.31.15
+  permission_handler: ^11.3.1
+  http: ^1.2.1          # ← NEW: for WiFi HTTP requests
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
